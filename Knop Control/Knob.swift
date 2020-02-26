@@ -143,7 +143,8 @@ import UIKit
     
     public func showTestVC(from viewController : UIViewController)
     {
-        let knobVC = KnobTestViewController(nibName: "KnobTestViewController", bundle: nil)
+        let bundle = Bundle(for: type(of: self))
+        let knobVC = KnobTestViewController(nibName: "KnobTestViewController", bundle: bundle)
         viewController.present(knobVC, animated: true, completion: nil)
     }
 }
