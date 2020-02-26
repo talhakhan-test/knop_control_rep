@@ -143,9 +143,24 @@ import UIKit
     
     public func showTestVC(from viewController : UIViewController)
     {
-        let bundle = Bundle(for: type(of: self))
-        let knobVC = KnobTestViewController(nibName: "KnobTestViewController", bundle: bundle)
-        viewController.present(knobVC, animated: true, completion: nil)
+        let podBundle = Bundle(for: type(of: self))
+        if let bundleURL = podBundle.url(forResource: "CustomBundle", withExtension: "bundle") {
+                
+            if let bundle = Bundle(url: bundleURL) {
+                        
+                let knobVC = KnobTestViewController(nibName: "KnobTestViewController", bundle: bundle)
+                viewController.present(knobVC, animated: true, completion: nil)
+                         
+             }else {
+                        
+                assertionFailure("Could not load the bundle")
+                        
+             }
+                    
+        }
+        
+        
+        
     }
 }
 
