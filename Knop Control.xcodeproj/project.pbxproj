@@ -40,6 +40,7 @@
 		64C95FCD24063A7F00418645 = {
 			isa = PBXGroup;
 			children = (
+				64E1AAFD24067E77008EACCB /* resources */,
 				64C95FD924063A8000418645 /* Knop Control */,
 				64C95FD824063A8000418645 /* Products */,
 			);
@@ -62,9 +63,16 @@
 				64C95FE424063B0200418645 /* KnobRenderer.swift */,
 				64C95FDB24063A8000418645 /* Info.plist */,
 				64C960002406771B00418645 /* KnobTestViewController.swift */,
-				64C960012406771B00418645 /* KnobTestViewController.xib */,
 			);
 			path = "Knop Control";
+			sourceTree = "<group>";
+		};
+		64E1AAFD24067E77008EACCB /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				64C960012406771B00418645 /* KnobTestViewController.xib */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

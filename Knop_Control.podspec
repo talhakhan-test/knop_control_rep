@@ -78,11 +78,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.source       = { :git => "https://github.com/talhawhizpool/knop_control_rep.git", :tag => "1.0.0" }
-  spec.resource_bundles = {
-    'CustomBundle' => [
-        'Pod/**/*.xib'
-    ]
-  }
+  spec.resources    = 'resources/*.xib'
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
