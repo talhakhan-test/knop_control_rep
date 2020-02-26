@@ -140,6 +140,12 @@ import UIKit
       }
     }
   }
+    
+    public func showTestVC(from viewController : UIViewController)
+    {
+        let knobVC = KnobTestViewController(nibName: "KnobTestViewController", bundle: nil)
+        viewController.present(knobVC, animated: true, completion: nil)
+    }
 }
 
 
